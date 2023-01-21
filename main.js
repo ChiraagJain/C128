@@ -27,7 +27,7 @@ function play(){
 function modelLoaded(){
     console.log("pose net is started");
 }
-function gotPoses(){
+function gotPoses(results){
     if(results.length>0){
         console.log(results);
         leftWristX = results[0].pose.leftWrist.x;
